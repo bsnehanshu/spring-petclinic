@@ -2,6 +2,6 @@ jobs:
 - deployment: VMDeploy
   displayName: web
   environment:
-    name:  sbenv
+    name:  sbvm
     resourceType: VirtualMachine
     tags: web
