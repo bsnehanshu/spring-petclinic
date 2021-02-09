@@ -9,7 +9,7 @@ jobs:
         maxParallel: 1  #for percentages, mention as x%
         preDeploy:
           steps:
-          - download: $(Build.ArtifactStagingDirectory)
+          - download: $(System.DefaultWorkingDirectory)'
             artifact: drop
           - script: echo initialize, cleanup, backup, install certs
         deploy:
